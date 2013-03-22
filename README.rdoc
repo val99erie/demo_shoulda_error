@@ -1,5 +1,7 @@
 == Demo of an error when trying to use shoulda for model validation
 
+Is this error possibly related to this change:
+https://github.com/thoughtbot/shoulda-matchers/issues/108
 
 == Steps to Reproduce the Error:
 
