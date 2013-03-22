@@ -1,7 +1,5 @@
 == Demo of an error when trying to use shoulda for model validation
 
-Rails is a web-application framework that includes everything needed to create
-database-backed web applications according to the Model-View-Control pattern.
 
 == Steps to Reproduce the Error:
 
@@ -11,11 +9,11 @@ database-backed web applications according to the Model-View-Control pattern.
 4. rake
 5. Notice the error message:
 
-test: User should require name to be set. (UserTest):
-NoMethodError: undefined method `failure_message' for #<Shoulda::Matchers::ActiveModel::ValidatePresenceOfMatcher:0x007fd90d9bcf60>
-    [...]/gems/shoulda-context-1.0.2/lib/shoulda/context/assertions.rb:60:in `assert_accepts'
-    [...]/gems/shoulda-context-1.0.2/lib/shoulda/context/context.rb:332:in `block in should'
-    [...]/gems/shoulda-context-1.0.2/lib/shoulda/context/context.rb:398:in `call'
-    [...]/gems/shoulda-context-1.0.2/lib/shoulda/context/context.rb:398:in `block in create_test_from_should_hash'
-    [...]/gems/mocha-0.13.3/lib/mocha/integration/mini_test/version_230_to_2101.rb:36:in `run'
+  test: User should require name to be set. (UserTest):
+  NoMethodError: undefined method `failure_message' for #<Shoulda::Matchers::ActiveModel::ValidatePresenceOfMatcher:0x007fd90d9bcf60>
+      [...]/gems/shoulda-context-1.0.2/lib/shoulda/context/assertions.rb:60:in `assert_accepts'
+      [...]/gems/shoulda-context-1.0.2/lib/shoulda/context/context.rb:332:in `block in should'
+      [...]/gems/shoulda-context-1.0.2/lib/shoulda/context/context.rb:398:in `call'
+      [...]/gems/shoulda-context-1.0.2/lib/shoulda/context/context.rb:398:in `block in create_test_from_should_hash'
+      [...]/gems/mocha-0.13.3/lib/mocha/integration/mini_test/version_230_to_2101.rb:36:in `run'
 
